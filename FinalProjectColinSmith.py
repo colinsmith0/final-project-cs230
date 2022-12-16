@@ -6,10 +6,9 @@ import matplotlib.pyplot as plt
 import random
 
 VOLCANOES = "volcanoes.csv"
-path = "C:/Users/colin/Documents/CS230Python/finalproject/"
-volcano_file = open(path + VOLCANOES, "r", encoding="utf-8-sig")
+volcano_file = open(VOLCANOES, "r", encoding="utf-8-sig")
 volcano_dict = list(csv.DictReader(volcano_file))
-volcano_df = pd.read_csv(path + VOLCANOES)
+volcano_df = pd.read_csv(VOLCANOES)
 volcano_file.close()
 # st.write(volcano_df)
 # st.write(volcano_dict)
